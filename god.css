@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "principal";
+    src: url(font/pr_viking/PR\ Viking.ttf);
+}
+
+@font-face {
+    font-family: "textos";
+    src: url(font/LongaIberica-DEMO.ttf);
+}
+
+@font-face {
+    font-family: "runa";
+    src: url(font/rune.ttf);
+}
+
+@font-face {
+    font-family: "menu";
+    src: url(font/LuÃ­sa.ttf);
+}
+
+body {
+    padding: 0px;
+    margin-top: 0px;
+    height: 300%;
+    overflow: hidden;
+    background: black;
+}
+
+#background {
+    position: absolute;
+    width: 1415px;
+    margin-left: -10px;
+    opacity: .5;
+}
+
+.quadro {
+    position: absolute;
+    width: 1150px;
+    height: 710px;
+    margin-top: 60px;
+    margin: 90px;
+    background: white;
+    background-image: url(paisagens/funto-quadro.jpg);
+    opacity: .9;
+}
+
+.logo1 {
+    position: absolute;
+    width: 700px;
+    margin-top: 460px;
+    margin-left: -190px;
+}
+
+.logo2 {
+    position: absolute;
+    width: 120px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.kratos-home {
+    position: absolute;
+    width: 800px;
+    margin-top:100px;
+    margin-left: 500px;
+}
+
+.menu {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 27px;
+}
+.list {
+    list-style: none;
+}
+.list li {
+    font-family: "menu";
+    display: inline-block;
+    margin-right: 25px;
+}
+.list a {
+    text-decoration: none;
+    color: #464343;
+}
+.list a:hover {
+    transition: 1s;
+    color: black;
+}
+
+/* TEXTOS */ 
+
+.oga {
+    position: absolute;
+    margin-top: 150px;
+}
+.oga ul {
+    list-style: none;
+}
+.oga li {
+    text-align: center;
+    color: #817b7b;
+    font-size: 30px ;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.oga li:hover {
+    -webkit-transform: scale(1.5);
+    color: white;
+}
+
+.bar {
+    cursor: pointer;
+}
+
+.content {
+    height: 80%;
+    width: 40%;
+    overflow: hidden;
+    position: absolute;
+    top: 90px;
+    left: 150px;
+    padding: 0px;
+}
+
+.textos {
+    position: absolute;
+    display: flex;
+    color: white;
+    height: 0px;
+    width: 600%;
+    padding: 0px 30px;
+}
+
+.texto {
+    width: 15%;
+    height: 50%;
+    margin-left: 50px;
+    
+}
+
+
+.texto h1 {
+    font-family: "principal";
+    text-align: center;
+    font-size: 50px;
+    
+}
+.texto hr {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    width: 150px;
+}
+.texto p {
+    font-family: "menu";
+    text-align: center;
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+/* caixa de texto */
+
+input {
+    display: none;
+}
+
+#texto1:checked ~ .s1{
+    margin-left: 0; 
+}
+
+#texto2:checked ~ .s1 {
+    margin-left: -16.8%;
+}
+
+#texto3:checked ~ .s1 {
+    margin-left: -33.6%;
+}
+
+#texto4:checked ~ .s1 {
+    margin-left: -50.4%;
+}
+
+#texto5:checked ~ .s1 {
+    margin-left: -67.2%;
+}
+
+/* video */
+
+.vid {
+    position: absolute;
+    width: 250px;
+    margin-top: 550px;
+    margin-left: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+.vid:hover {
+    -webkit-transform: scale(1.2);
+}
+
+.seta-dir {
+    position: absolute;
+    width: 60px;
+    margin-top: 590px;
+    margin-left: 340px;
+    cursor: pointer;
+}
+.seta-dir:hover {
+    -webkit-transform: scale(1.2);
+}
+
+.vid1 {
+    position: absolute;
+    width: 230px;
+    border-radius: 5px;
+    margin-top: 590px;
+    margin-left: 450px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+.vid1:hover {
+    -webkit-transform: scale(1.2);
+}
+
+.vid2 {
+    position: absolute;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 580px;
+    margin-left: 70px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+.vid2:hover {
+    -webkit-transform: scale(1.2);
+}
+
+.seta {
+    position: absolute;
+    width: 80px;
+    margin-top: 250px;
+    margin-left: 1400px;
+    opacity: .3;
+    cursor: pointer;
+}
+
+video {
+    position: absolute;
+    left: 1405px;
+    width: 1415px;
+}
+
+.tudo {
+    position: absolute;
+    height: 800px;
+    width: 2900px;
+}
+
+.caixa2 {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.vide {
+    position: absolute;
+}
+
+#video1:checked ~ .s1{
+    -webkit-transition: all .5s ease-in;
+    margin-left: -50.3%; 
+}
+
+#video2:checked ~ .s1 {
+    -webkit-transition: all .5s ease-in;
+    margin-left: 0%;
+}
+
+
+
+
